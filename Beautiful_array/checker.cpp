@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int gcd(int a,int b){
+long long gcd(long long a,long long b){
 	return (b==0)?a:gcd(b,a%b);
 }
 
@@ -19,8 +19,8 @@ int n_in = inf.readInt(3,100000,"N from input");
 vector<int>ans = ouf.readInts(n_in,1,a_mx,"Answer of the participant");
 
 //Initializing
-int gcd_all;
-int sum_of_array=0;
+long long gcd_all;
+long long sum_of_array=0;
 
 for(int i=0;i<(int)ans.size();i++)
 {
