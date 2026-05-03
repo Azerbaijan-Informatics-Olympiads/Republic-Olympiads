@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="8" short-name="merging-kingdoms" url="https://polygon.codeforces.com/p0qVrrP/Tahirliyev/merging-kingdoms">
+    <names>
+        <name language="english" value="Merging Kingdoms"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>52</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test cmd="gen -n=2 -mode=0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=6 -mode=0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=6 -mode=2" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=6 -mode=5" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=6 -mode=10" group="1" method="generated" points="5.0"/>
+                <test cmd="gen -n=7 -mode=0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -mode=0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -mode=2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -mode=6" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -mode=9" group="2" method="generated" points="5.0"/>
+                <test group="3" method="manual" points="0.0"/>
+                <test cmd="gen -n=12 -mode=0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=15 -mode=2" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=20 -mode=0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=20 -mode=6" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=20 -mode=9" group="3" method="generated" points="13.0"/>
+                <test cmd="gen -n=30 -mode=1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -mode=1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=500 -mode=1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=11" group="4" method="generated" points="17.0"/>
+                <test cmd="gen -n=100 -mode=0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=300 -mode=6" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=500 -mode=0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=500 -mode=2" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=500 -mode=7" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=500 -mode=12" group="5" method="generated" points="15.0"/>
+                <test cmd="gen -n=700 -mode=0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=2" group="6" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=6" group="6" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=7" group="6" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -mode=12" group="6" method="generated" points="30.0"/>
+                <test cmd="gen -n=1500 -mode=0" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=0" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=2" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=3" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=4" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=5" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=6" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=7" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=8" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=9" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=10" group="7" method="generated" points="0.0"/>
+                <test cmd="gen -n=5000 -mode=12" group="7" method="generated" points="15.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="1" points="5.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="2" points="5.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="13.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="4" points="17.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="5" points="15.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="6" points="30.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="5"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="7" points="15.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                        <dependency group="5"/>
+                        <dependency group="6"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/01"/>
+            <file path="files/02"/>
+            <file path="files/03"/>
+            <file path="files/04"/>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::hcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/Maybe_correct_or_tle.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/Maybe_correct_or_tle3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/WA1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/WA2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/ali_solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/greedy.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/model_sol.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/model_sol_python.py" type="python.3"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/n3_subopt.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/stronger_greedy.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask4_ai3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask5_n3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask6_n2logn.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

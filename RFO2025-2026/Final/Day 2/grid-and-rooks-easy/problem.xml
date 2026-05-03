@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="grid-and-rooks-easy" url="https://polygon.codeforces.com/p4wBOTB/Nelt/grid-and-rooks-easy">
+    <names>
+        <name language="english" value="Grid and Rooks (Easy version)"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>21</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen 1" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 2" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 3" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 4" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 5" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 6" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 7" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 8" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 9" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 10" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 11" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 12" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 13" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 14" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 15" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 16" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 17" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 18" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 19" group="1" method="generated" points="5.0"/>
+                <test cmd="gen 20" group="1" method="generated" points="5.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points-policy="each-test"/>
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/alternative.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="greedy"/>
+    </tags>
+</problem>

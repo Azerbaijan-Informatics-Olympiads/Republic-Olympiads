@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="garden" url="https://polygon.codeforces.com/p6W88EW/raul2008487/garden">
+    <names>
+        <name language="english" value="The Harmonic Garden"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>33</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test cmd="gen -n 10 -q 10 -k 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n 1000 -q 1000 -k 10" group="1" method="generated" points="10.0"/>
+                <test cmd="gen -n 500 -q 800 -k 5" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n 1 -q 1 -k 2" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 10 -no_updates true" group="2" method="generated" points="15.0"/>
+                <test cmd="gen -n 150000 -q 150000 -k 5 -no_updates true" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 2 -no_updates true" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 199999 -q 200000 -k 7 -st 2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 200000 -q 200000 -k 10 -st 2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 10 -point_updates true" group="3" method="generated" points="20.0"/>
+                <test cmd="gen -n 100000 -q 200000 -k 7 -point_updates true" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 200000 -q 200000 -k 2 -st 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 199999 -q 200000 -k 10 -st 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 200000 -q 200000 -k 10 -st 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 2" group="4" method="generated" points="20.0"/>
+                <test cmd="gen -n 199999 -q 200000 -k 2" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 200000 -q 200000 -k 2 -st 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 199999 -q 200000 -k 2 -type sawtooth" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 2 -type small_ranges" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 10" group="5" method="generated" points="35.0"/>
+                <test cmd="gen -n 200000 -q 200000 -k 8" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n 199999 -q 199999 -k 10" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_killer -n 200000 -q 200000 -k 10 -st 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type flat" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 199999 -q 200000 -k 10 -type flat" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type stairs" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 5 -type stairs" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type micro" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type sawtooth" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type lazy_stress" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_edge -n 200000 -q 200000 -k 10 -type small_ranges" group="5" method="generated" points="0.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points-policy="each-test"/>
+                <group feedback-policy="points" name="1" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="2" points="15.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="3" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="4" points="20.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="5" points="35.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen_edge.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/gen_killer.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/val.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/bitset_hack.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/full_python_solution.py" type="python.pypy3-64"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/full_solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/sqrt_hack.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/subtask_1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/subtask_1_shortint.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask_2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask_3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask_4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="1" short-name="composite" url="https://polygon.codeforces.com/p7EeiUU/Mamedov/composite">
+    <names>
+        <name language="english" value="Composite"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>500</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>50</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test cmd="generator 1 2" method="generated"/>
+                <test cmd="generator 1 5" method="generated"/>
+                <test cmd="generator 1 7" method="generated"/>
+                <test cmd="generator 1 8" method="generated"/>
+                <test cmd="generator 1 9" method="generated"/>
+                <test cmd="generator 2 2" method="generated"/>
+                <test cmd="generator 2 5" method="generated"/>
+                <test cmd="generator 2 7" method="generated"/>
+                <test cmd="generator 2 8" method="generated"/>
+                <test cmd="generator 2 9" method="generated"/>
+                <test cmd="generator 3 1" method="generated"/>
+                <test cmd="generator 3 2" method="generated"/>
+                <test cmd="generator 3 3" method="generated"/>
+                <test cmd="generator 3 4" method="generated"/>
+                <test cmd="generator 4 9 1" method="generated"/>
+                <test cmd="generator 4 9 2" method="generated"/>
+                <test cmd="generator 4 8 1" method="generated"/>
+                <test cmd="generator 4 8 2" method="generated"/>
+                <test cmd="generator 4 7 1" method="generated"/>
+                <test cmd="generator 4 7 2" method="generated"/>
+                <test cmd="generator 4 5 1" method="generated"/>
+                <test cmd="generator 5 9 1" method="generated"/>
+                <test cmd="generator 5 9 2" method="generated"/>
+                <test cmd="generator 5 9 3" method="generated"/>
+                <test cmd="generator 5 8" method="generated"/>
+                <test cmd="generator 5 7" method="generated"/>
+                <test cmd="generator 5 6" method="generated"/>
+                <test cmd="generator 0 8 1" method="generated"/>
+                <test cmd="generator 0 8 2" method="generated"/>
+                <test cmd="generator 0 8 3" method="generated"/>
+                <test cmd="generator 0 9 1" method="generated"/>
+                <test cmd="generator 0 9 2" method="generated"/>
+                <test cmd="generator 0 9 3" method="generated"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+                <test method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>8</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>5</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/gemi-sol.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/python_solution.py" type="python.3"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="implementation"/>
+        <tag value="primality test"/>
+    </tags>
+</problem>

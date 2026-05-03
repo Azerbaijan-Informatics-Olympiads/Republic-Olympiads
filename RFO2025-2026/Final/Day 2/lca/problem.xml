@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="1" short-name="lca" url="https://polygon.codeforces.com/p5Db7d5/Mamedov/lca">
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>50</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=2 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=3 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=4 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=5 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=6 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=7 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=8 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=9 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=17 -type=0" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=1" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=2" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=3" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=17 -type=4" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=5" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=16 -type=6" group="1" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=1 -n=18 -type=7" group="1" method="generated" points="20.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=0" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=1971 -type=0" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=1" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=1999 -type=2" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=3" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=4" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=5" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=1999 -type=6" group="2" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=2 -n=2000 -type=7" group="2" method="generated" points="20.0"/>
+                <test cmd="generator -subtask=3 -n=300000 -type=2" group="3" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=3 -n=299999 -type=2" group="3" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=3 -n=243423 -type=2" group="3" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=3 -n=199999 -type=2" group="3" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=3 -n=293843 -type=2" group="3" method="generated" points="15.0"/>
+                <test cmd="generator -subtask=4 -n=300000 -type=1" group="4" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=4 -n=299999 -type=1" group="4" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=4 -n=243423 -type=1" group="4" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=4 -n=199999 -type=1" group="4" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=4 -n=293843 -type=1" group="4" method="generated" points="15.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=0" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=0" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=3" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=3" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=4" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=4" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=5" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=5" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=6" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=6" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=300000 -type=7" group="5" method="generated" points="0.0"/>
+                <test cmd="generator -subtask=5 -n=293843 -type=7" group="5" method="generated" points="30.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="1" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="2" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="15.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="4" points="15.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="5" points="30.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/gemini.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/subtask4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
